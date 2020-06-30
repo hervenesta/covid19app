@@ -1,0 +1,21 @@
+{
+  "name": "covid19app",
+  "version": "1.0.0",
+  "description": "covid19 statistics",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node api/index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "author": "Hervey",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^2.0.4",
+    "request": "^2.88.2"
+  }
+}
